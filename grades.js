@@ -54,7 +54,7 @@ function calculateGrade(data) {
   const homework = Number(data.homework);
   const midterm = Number(data.midterm);
   const final = Number(data.final);
-  const extra = data.extra.trim() === "" ? 0 : data.extra.trim();
+  const extra = Number(data.extra.trim());
 
   const weighted =
     homework * HOMEWORK_WEIGHT + midterm * MIDTERM_WEIGHT + final * FINAL_WEIGHT;
