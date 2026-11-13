@@ -1,9 +1,9 @@
 // Course grade calculator: validates the grade form, calculates the final
 // grade and letter grade, and shows a result card. See docs/requirements.md.
 
-const HOMEWORK_WEIGHT = 0.4;
-const MIDTERM_WEIGHT = 0.25;
-const FINAL_WEIGHT = 0.35;
+const MIDTERM_WEIGHT = 0.4;
+const HOMEWORK_WEIGHT = 0.35;
+const FINAL_WEIGHT = 0.25;
 const MAX_EXTRA = 10;
 const MAX_NOTE = 120;
 
