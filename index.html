@@ -12,22 +12,29 @@
     <form id="grade-form" novalidate>
       <label for="homework">Homework average (0–100)</label>
       <input id="homework" inputmode="decimal">
+      <p class="error" id="homework-error"></p>
 
       <label for="midterm">Midterm exam (0–100)</label>
       <input id="midterm" inputmode="decimal">
+      <p class="error" id="midterm-error"></p>
 
       <label for="final">Final exam (0–100)</label>
       <input id="final" inputmode="decimal">
+      <p class="error" id="final-error"></p>
 
       <label for="extra">Extra credit points (optional)</label>
       <input id="extra" inputmode="numeric">
+      <p class="error" id="extra-error"></p>
 
       <label for="note">Note (optional)</label>
       <textarea id="note" rows="3"></textarea>
+      <p class="counter" id="note-counter">0/120</p>
+      <p class="error" id="note-error"></p>
 
       <button type="submit">Calculate grade</button>
     </form>
     <p id="status" role="status"></p>
+    <section id="result" hidden></section>
   </main>
   <script src="grades.js"></script>
 </body>
